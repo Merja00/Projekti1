@@ -1,0 +1,114 @@
+{"level":30,"time":"2021-07-17T11:41:46.023Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Listening on 63921"}
+{"level":30,"time":"2021-07-17T11:41:46.596Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:41:46.627Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:47.067Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:41:47.068Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+================= Original suppressed error =================
+page.title: Execution context was destroyed, most likely because of a navigation.
+Error
+    at Object.captureStackTrace (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:51:19)
+    at Connection.sendMessageToServer (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:73:48)
+    at Proxy.<anonymous> (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:401:35
+    at Frame._wrapApiCall (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.title (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:400:21)
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:397:60
+    at Page._attributeToPage (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:202:20)
+    at Page.title (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:397:21)
+    at Object.<anonymous> (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23656:51)
+    at step (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23639:23)
+    at Object.next (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23620:53)
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23614:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/getters.ts.__awaiter (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23610:12)
+    at Object.getTitle (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23652:12)
+    at PlaywrightServer.<anonymous> (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:24421:54)
+    at step (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:24016:23)
+    at Object.next (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23997:53)
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23991:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:23987:12)
+    at PlaywrightServer.__webpack_modules__../node/playwright-wrapper/grpc-service.ts.PlaywrightServer.getTitle (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:24415:16)
+    at handleUnary (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:17931:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+=============================================================
+{"level":30,"time":"2021-07-17T11:41:50.652Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:50.653Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:41:50.653Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:50.700Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:50.701Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:41:50.701Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:51.401Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:41:51.432Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:51.623Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:41:51.624Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:53.996Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:41:54.023Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:54.225Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:41:54.226Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:57.041Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:41:57.084Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:41:57.135Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing Check your username and password"}
+{"level":30,"time":"2021-07-17T11:41:57.143Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:57.143Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:41:57.143Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:57.162Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:57.162Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:41:57.162Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:41:57.858Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:41:57.897Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:41:58.125Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:41:58.125Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:01.065Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.099Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.165Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.211Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.299Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.342Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.389Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.434Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.478Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:01.521Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing Check your username and password"}
+{"level":30,"time":"2021-07-17T11:42:01.530Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:01.530Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:01.530Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:01.550Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:01.550Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:01.550Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:02.140Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:42:02.160Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:02.327Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:42:02.327Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:05.236Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:05.298Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing "}
+{"level":30,"time":"2021-07-17T11:42:05.376Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element body > div.dialog.open > div.dialog-content > form > div.form-error-container containing Check your username and password"}
+{"level":30,"time":"2021-07-17T11:42:05.384Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:05.384Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:05.384Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:05.400Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:05.401Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:05.401Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+================= Original suppressed error =================
+Error: No context for id context=cb376ece-5464-4c41-969c-c53d6d8eff5a. Open contexts: 
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:26558:23
+    at step (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25839:23)
+    at Object.next (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25820:53)
+    at c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25814:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25810:12)
+    at _switchContext (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:26546:12)
+    at Object.<anonymous> (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:26643:42)
+    at step (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25839:23)
+    at Object.next (c:\users\merja\appdata\local\programs\python\python39\lib\site-packages\Browser\wrapper\index.js:25820:53)
+=============================================================
+{"level":30,"time":"2021-07-17T11:42:06.380Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-07-17T11:42:06.398Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:06.731Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-17T11:42:06.731Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:12.829Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Retrieved text for element h4.modal-title containing Create new"}
+{"level":30,"time":"2021-07-17T11:42:12.839Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:12.839Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:12.839Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}
+{"level":30,"time":"2021-07-17T11:42:12.858Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active context"}
+{"level":30,"time":"2021-07-17T11:42:12.858Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-17T11:42:12.858Z","pid":1768,"hostname":"DESKTOP-QOT00FH","msg":"Changed active page"}

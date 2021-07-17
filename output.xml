@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210717 14:41:45.466" rpa="false" schemaversion="2">
+<suite id="s1" name="Valid &amp; Invalid &amp; New Poll">
+<suite id="s1-s1" name="Valid" source="C:\Users\merja\RobotTraining\Projekti1\valid.robot">
+<test id="s1-s1-t1" name="Valid login">
+<kw name="Open browser to login page" library="login">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:41:46.246" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\a059ad9f-50ce-41dd-92cd-fa1220b2cd8a"}</msg>
+<msg timestamp="20210717 14:41:46.593" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\a059ad9f-50ce-41dd-92cd-fa1220b2cd8a"}</msg>
+<status status="PASS" starttime="20210717 14:41:46.245" endtime="20210717 14:41:46.593"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:41:48.993" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:41:48.993" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:41:46.593" endtime="20210717 14:41:48.993"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:46.245" endtime="20210717 14:41:48.993"/>
+</kw>
+<kw name="Accept cookies" library="login">
+<kw name="Click" library="Browser">
+<arg>id=adroll_allow_all</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:48.998" endtime="20210717 14:41:49.124"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:48.994" endtime="20210717 14:41:49.125"/>
+</kw>
+<kw name="Press login button" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; nav &gt; div &gt; div.buttons &gt; a.login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:49.127" endtime="20210717 14:41:49.180"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:49.126" endtime="20210717 14:41:49.181"/>
+</kw>
+<kw name="Type in valid username" library="login">
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="username"]</arg>
+<arg>${VALID USER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:41:49.182" level="INFO">Types the text 'test@knowit.com' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:41:49.182" endtime="20210717 14:41:49.293"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:49.181" endtime="20210717 14:41:49.293"/>
+</kw>
+<kw name="Type in valid password" library="login">
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="password"]</arg>
+<arg>${VALID PWD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:41:49.294" level="INFO">Types the text 'Knowit123_' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:41:49.294" endtime="20210717 14:41:49.369"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:49.294" endtime="20210717 14:41:49.369"/>
+</kw>
+<kw name="Submit credentials" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.row &gt; input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:49.370" endtime="20210717 14:41:49.836"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:49.369" endtime="20210717 14:41:49.836"/>
+</kw>
+<kw name="Welcome page should be open" library="login">
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>VibeCatch</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20210717 14:41:49.837" endtime="20210717 14:41:50.637"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:49.837" endtime="20210717 14:41:50.638"/>
+</kw>
+<tag>Case1</tag>
+<tag>login</tag>
+<tag>overrides default</tag>
+<status status="PASS" starttime="20210717 14:41:46.243" endtime="20210717 14:41:50.642"/>
+</test>
+<status status="PASS" starttime="20210717 14:41:45.490" endtime="20210717 14:41:50.908"/>
+</suite>
+<suite id="s1-s2" name="Invalid" source="C:\Users\merja\RobotTraining\Projekti1\invalid.robot">
+<kw name="Open browser to login page" library="login" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:41:50.939" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\b780b0ea-bf16-4d26-8095-4627c5ade624"}</msg>
+<msg timestamp="20210717 14:41:51.400" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\b780b0ea-bf16-4d26-8095-4627c5ade624"}</msg>
+<status status="PASS" starttime="20210717 14:41:50.938" endtime="20210717 14:41:51.400"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:41:53.495" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:41:53.496" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:41:51.400" endtime="20210717 14:41:53.496"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:50.937" endtime="20210717 14:41:53.496"/>
+</kw>
+<test id="s1-s2-t1" name="Invalid username">
+<kw name="Login with invalid credentials should fail">
+<arg>invalid@in.fi</arg>
+<arg>${VALID PWD}</arg>
+<kw name="Open browser to login page" library="login">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:41:53.505" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\fe894360-42ea-475c-a99d-27d1f3af7cea"}</msg>
+<msg timestamp="20210717 14:41:53.994" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\fe894360-42ea-475c-a99d-27d1f3af7cea"}</msg>
+<status status="PASS" starttime="20210717 14:41:53.505" endtime="20210717 14:41:53.994"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:41:56.238" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:41:56.239" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:41:53.994" endtime="20210717 14:41:56.239"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:53.505" endtime="20210717 14:41:56.239"/>
+</kw>
+<kw name="Accept cookies" library="login">
+<kw name="Click" library="Browser">
+<arg>id=adroll_allow_all</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:56.240" endtime="20210717 14:41:56.315"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:56.239" endtime="20210717 14:41:56.315"/>
+</kw>
+<kw name="Press login button" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; nav &gt; div &gt; div.buttons &gt; a.login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:56.316" endtime="20210717 14:41:56.378"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:56.315" endtime="20210717 14:41:56.378"/>
+</kw>
+<kw name="Type in username" library="login">
+<arg>${username}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:41:56.379" level="INFO">Types the text 'invalid@in.fi' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:41:56.379" endtime="20210717 14:41:56.427"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:56.378" endtime="20210717 14:41:56.428"/>
+</kw>
+<kw name="Type in password" library="login">
+<arg>${password}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:41:56.428" level="INFO">Types the text 'Knowit123_' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:41:56.428" endtime="20210717 14:41:56.480"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:56.428" endtime="20210717 14:41:56.480"/>
+</kw>
+<kw name="Submit credentials" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.row &gt; input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:41:56.481" endtime="20210717 14:41:57.009"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:56.480" endtime="20210717 14:41:57.009"/>
+</kw>
+<kw name="Error page should be open" library="login">
+<kw name="Get Text" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.form-error-container</arg>
+<arg>==</arg>
+<arg>Check your username and password</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<status status="PASS" starttime="20210717 14:41:57.010" endtime="20210717 14:41:57.137"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:57.009" endtime="20210717 14:41:57.137"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:53.504" endtime="20210717 14:41:57.137"/>
+</kw>
+<tag>Case2</tag>
+<tag>login</tag>
+<status status="PASS" starttime="20210717 14:41:53.496" endtime="20210717 14:41:57.138"/>
+</test>
+<test id="s1-s2-t2" name="Invalid password">
+<kw name="Login with invalid credentials should fail">
+<arg>${VALID USER}</arg>
+<arg>invalid</arg>
+<kw name="Open browser to login page" library="login">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:41:57.247" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\4c806a65-6e21-4033-8d4d-5940d56d5819"}</msg>
+<msg timestamp="20210717 14:41:57.852" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\4c806a65-6e21-4033-8d4d-5940d56d5819"}</msg>
+<status status="PASS" starttime="20210717 14:41:57.246" endtime="20210717 14:41:57.852"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:42:00.250" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:42:00.250" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:41:57.853" endtime="20210717 14:42:00.250"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:57.246" endtime="20210717 14:42:00.251"/>
+</kw>
+<kw name="Accept cookies" library="login">
+<kw name="Click" library="Browser">
+<arg>id=adroll_allow_all</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:00.251" endtime="20210717 14:42:00.342"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:00.251" endtime="20210717 14:42:00.342"/>
+</kw>
+<kw name="Press login button" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; nav &gt; div &gt; div.buttons &gt; a.login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:00.342" endtime="20210717 14:42:00.396"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:00.342" endtime="20210717 14:42:00.396"/>
+</kw>
+<kw name="Type in username" library="login">
+<arg>${username}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:00.397" level="INFO">Types the text 'test@knowit.com' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:00.397" endtime="20210717 14:42:00.476"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:00.396" endtime="20210717 14:42:00.476"/>
+</kw>
+<kw name="Type in password" library="login">
+<arg>${password}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:00.477" level="INFO">Types the text 'invalid' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:00.476" endtime="20210717 14:42:00.510"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:00.476" endtime="20210717 14:42:00.511"/>
+</kw>
+<kw name="Submit credentials" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.row &gt; input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:00.511" endtime="20210717 14:42:01.029"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:00.511" endtime="20210717 14:42:01.030"/>
+</kw>
+<kw name="Error page should be open" library="login">
+<kw name="Get Text" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.form-error-container</arg>
+<arg>==</arg>
+<arg>Check your username and password</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<status status="PASS" starttime="20210717 14:42:01.031" endtime="20210717 14:42:01.524"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:01.030" endtime="20210717 14:42:01.524"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:57.245" endtime="20210717 14:42:01.524"/>
+</kw>
+<tag>Case2</tag>
+<tag>login</tag>
+<status status="PASS" starttime="20210717 14:41:57.236" endtime="20210717 14:42:01.525"/>
+</test>
+<test id="s1-s2-t3" name="Both invalid">
+<kw name="Login with invalid credentials should fail">
+<arg>invalid@in.fi</arg>
+<arg>invalid</arg>
+<kw name="Open browser to login page" library="login">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:42:01.642" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\273fd78b-6fa6-4d82-9231-12f5d1f70a2d"}</msg>
+<msg timestamp="20210717 14:42:02.138" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\273fd78b-6fa6-4d82-9231-12f5d1f70a2d"}</msg>
+<status status="PASS" starttime="20210717 14:42:01.640" endtime="20210717 14:42:02.139"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:42:04.413" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:42:04.413" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:42:02.139" endtime="20210717 14:42:04.413"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:01.638" endtime="20210717 14:42:04.413"/>
+</kw>
+<kw name="Accept cookies" library="login">
+<kw name="Click" library="Browser">
+<arg>id=adroll_allow_all</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:04.414" endtime="20210717 14:42:04.494"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:04.414" endtime="20210717 14:42:04.494"/>
+</kw>
+<kw name="Press login button" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; nav &gt; div &gt; div.buttons &gt; a.login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:04.495" endtime="20210717 14:42:04.557"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:04.494" endtime="20210717 14:42:04.557"/>
+</kw>
+<kw name="Type in username" library="login">
+<arg>${username}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:04.558" level="INFO">Types the text 'invalid@in.fi' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:04.558" endtime="20210717 14:42:04.610"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:04.557" endtime="20210717 14:42:04.611"/>
+</kw>
+<kw name="Type in password" library="login">
+<arg>${password}</arg>
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:04.612" level="INFO">Types the text 'invalid' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:04.612" endtime="20210717 14:42:04.696"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:04.611" endtime="20210717 14:42:04.696"/>
+</kw>
+<kw name="Submit credentials" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.row &gt; input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:04.696" endtime="20210717 14:42:05.209"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:04.696" endtime="20210717 14:42:05.210"/>
+</kw>
+<kw name="Error page should be open" library="login">
+<kw name="Get Text" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.form-error-container</arg>
+<arg>==</arg>
+<arg>Check your username and password</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<status status="PASS" starttime="20210717 14:42:05.210" endtime="20210717 14:42:05.378"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:05.210" endtime="20210717 14:42:05.378"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:01.637" endtime="20210717 14:42:05.378"/>
+</kw>
+<tag>Case2</tag>
+<tag>login</tag>
+<status status="PASS" starttime="20210717 14:42:01.628" endtime="20210717 14:42:05.379"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:42:05.751" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20210717 14:42:05.467" endtime="20210717 14:42:05.751"/>
+</kw>
+<status status="PASS" starttime="20210717 14:41:50.920" endtime="20210717 14:42:05.751"/>
+</suite>
+<suite id="s1-s3" name="New Poll" source="C:\Users\merja\RobotTraining\Projekti1\new_poll.robot">
+<test id="s1-s3-t1" name="Create a new poll">
+<kw name="Open browser to login page" library="login">
+<kw name="New Browser" library="Browser">
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210717 14:42:05.792" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\fe6dace2-eda2-4de5-8b68-a38b60ca4c49"}</msg>
+<msg timestamp="20210717 14:42:06.377" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\merja\\RobotTraining\\Projekti1\\browser\\traces\\fe6dace2-eda2-4de5-8b68-a38b60ca4c49"}</msg>
+<status status="PASS" starttime="20210717 14:42:05.790" endtime="20210717 14:42:06.378"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210717 14:42:08.628" level="INFO">Successfully initialized new page object and opened url: https://env-5369504.paas.datacenter.fi/</msg>
+<msg timestamp="20210717 14:42:08.628" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210717 14:42:06.378" endtime="20210717 14:42:08.628"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:05.789" endtime="20210717 14:42:08.629"/>
+</kw>
+<kw name="Accept cookies" library="login">
+<kw name="Click" library="Browser">
+<arg>id=adroll_allow_all</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:08.630" endtime="20210717 14:42:08.715"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:08.629" endtime="20210717 14:42:08.716"/>
+</kw>
+<kw name="Press login button" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; nav &gt; div &gt; div.buttons &gt; a.login</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:08.717" endtime="20210717 14:42:08.782"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:08.716" endtime="20210717 14:42:08.783"/>
+</kw>
+<kw name="Type in valid username" library="login">
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="username"]</arg>
+<arg>${VALID USER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:08.787" level="INFO">Types the text 'test@knowit.com' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:08.786" endtime="20210717 14:42:08.897"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:08.784" endtime="20210717 14:42:08.898"/>
+</kw>
+<kw name="Type in valid password" library="login">
+<kw name="Type Text" library="Browser">
+<arg>//*[@id="password"]</arg>
+<arg>${VALID PWD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210717 14:42:08.899" level="INFO">Types the text 'Knowit123_' in the given field.</msg>
+<status status="PASS" starttime="20210717 14:42:08.899" endtime="20210717 14:42:08.995"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:08.898" endtime="20210717 14:42:08.995"/>
+</kw>
+<kw name="Submit credentials" library="login">
+<kw name="Click" library="Browser">
+<arg>body &gt; div.dialog.open &gt; div.dialog-content &gt; form &gt; div.row &gt; input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:08.996" endtime="20210717 14:42:09.441"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:08.996" endtime="20210717 14:42:09.441"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//*[@id="masterContainer"]/vibe-list/div[4]/div/a/i</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210717 14:42:09.442" endtime="20210717 14:42:12.766"/>
+</kw>
+<kw name="New poll page should be open" library="login">
+<kw name="Get Text" library="Browser">
+<arg>h4.modal-title</arg>
+<arg>==</arg>
+<arg>Create new</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<status status="PASS" starttime="20210717 14:42:12.768" endtime="20210717 14:42:12.831"/>
+</kw>
+<status status="PASS" starttime="20210717 14:42:12.767" endtime="20210717 14:42:12.831"/>
+</kw>
+<tag>Case3</tag>
+<tag>poll</tag>
+<status status="PASS" starttime="20210717 14:42:05.776" endtime="20210717 14:42:12.831"/>
+</test>
+<status status="PASS" starttime="20210717 14:42:05.761" endtime="20210717 14:42:12.903"/>
+</suite>
+<status status="PASS" starttime="20210717 14:41:45.467" endtime="20210717 14:42:12.910"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Case1</stat>
+<stat pass="3" fail="0" skip="0">Case2</stat>
+<stat pass="1" fail="0" skip="0">Case3</stat>
+<stat pass="4" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">overrides default</stat>
+<stat pass="1" fail="0" skip="0">poll</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Valid &amp; Invalid &amp; New Poll">Valid &amp; Invalid &amp; New Poll</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Valid">Valid &amp; Invalid &amp; New Poll.Valid</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="Invalid">Valid &amp; Invalid &amp; New Poll.Invalid</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="New Poll">Valid &amp; Invalid &amp; New Poll.New Poll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
